@@ -1,0 +1,14 @@
+{
+  "name": "photobook",
+  "version": "1.0.0",
+  "description": "save images and photos guardar imagenes y fotos",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Sneider Diaz R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
