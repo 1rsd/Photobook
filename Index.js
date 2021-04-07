@@ -6,42 +6,42 @@ app.use(bodyParser.json());
  
 app.get('/', function(req, res, next){
   console.log('get route', req.testing);
-  res.send("Cargando!!");
+  res.send("Loading!!");
   res.end();
 });
-
-app.get('/2', function(req, res, next){
-    console.log('get route', req.testing);
-    res.send("Raul");
-    res.end();
-  });
-  app.get('/2', function(req, res, next){
-    console.log('get route', req.testing);
-    res.send("Abrir foto");
+  app.get('/Open_photo', function(req, res, next){
+    console.log('get route', req.body.testing);
+    res.send("Open photo");
     res.end();
   }); 
 
 
-  app.post('/', function(req, res, next){
+  app.post('/Uploading_content', function(req, res, next){
     console.log('post content', req.body.testing);
-    res.send("Subiendo contenido;Description: ; ");
+    res.send("Uploading content;Description: ; ");
     res.end();
   });
 
-  app.post('/', function(req, res, next){
-    console.log('post content', req.body.testing);
+  app.get('/Post', function(req, res, next){
+    console.log('get route', req.body.testing);
     res.send("Info post ");
     res.end();
   });
 
-  app.put('/', function(req, res, next){
-    console.log('put route', req.body.testing);
-    res.send("Publicar Comentario");
+  app.get('/Like', function(req, res, next){
+    console.log('get route', req.body.testing);
+    res.send("Like");
     res.end();
   });
-  app.put('/', function(req, res, next){
+
+  app.post('/Post_comment', function(req, res, next){
     console.log('put route', req.body.testing);
-    res.send("Redirección a Sube tu idea");
+    res.send("Post comment");
+    res.end();
+  });
+  app.get('/upload_your_idea', function(req, res, next){
+    console.log('get route', req.body.testing);
+    res.send("Redirection to upload your idea");
     res.end();
   });
 
