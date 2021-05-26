@@ -2,11 +2,81 @@
 <html>
 <head>
 	<title>Sube tu idea|Photobook</title>
+
+        <meta name="author" content="RSD">
+        <meta name="description" content="This is my first website">
+<style>
+        header{
+                color: white;
+                background-color: #50C0D3;
+                font-family: Poppins;
+                font-size: 25px;
+                width: 1279px;
+                height: 150px;		
+        }
+        footer{
+                color: white;
+                background-color: #42E7C5;
+                font-family: Poppins;
+                font-weight: bold;
+                font-size: 30px;
+                width: 1279px;
+                height: 186px;
+                padding: 30px;		
+        }
+        a{
+                color: #FEFEFE;
+                font-family: Poppins;
+
+        }
+        .links{
+                background-color: #50C0D3;
+                font-size: 30px;
+                width: 1263px;
+                height: 100px;
+                text-align: center;
+        }
+        li{
+                display: inline;
+                padding-left: 10px;
+                padding-right: 10px;
+        }
+        *{
+                margin: 0;
+                padding: 0;
+        }
+        body{
+                background-color: #A0DCDC;
+                font-size: 25px;
+        }
+        .Post{
+                font-family: Calibri;
+                margin: 15px;
+                padding: 10px;
+        }
+        time{ 
+                font-size: 20px;
+                font-weight: bold;
+        }
+        h1{
+                font-family: Poppins;
+        }
+        #articulo{
+                font-size: 20px;
+        }
+        #formulario{
+                font-family: Poppins;
+                font-size: 15px;
+
+        }
+</style>
 </head>
 <body>
-<form action='http://localhost:3000/upload_your_idea' method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Subir">
+<form action='http://localhost:3000/upload_your_idea' method="POST" enctype="multipart/form-data" id="formulario">
+        Nombre de la idea <input type="text" name="post_Name"><br>
+        Descripción <input type="text" name="desciption"><br>
+        <input type="file" name="file"><br>
+        <input type="submit" value="upload">
 </form>
 </body>
 </html>
