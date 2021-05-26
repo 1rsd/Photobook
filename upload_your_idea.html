@@ -8,15 +8,15 @@
 <style>
         header{
                 color: white;
-                background-color: #50C0D3;
+                background-color:#2B475E;
                 font-family: Poppins;
                 font-size: 25px;
-                width: 1279px;
-                height: 150px;		
+                width: 1290px;
+                height: 90px;		
         }
         footer{
                 color: white;
-                background-color: #42E7C5;
+                background-color: #2B475E;
                 font-family: Poppins;
                 font-weight: bold;
                 font-size: 30px;
@@ -25,7 +25,7 @@
                 padding: 30px;		
         }
         a{
-                color: #FEFEFE;
+                color: #2B475E;
                 font-family: Poppins;
 
         }
@@ -46,7 +46,7 @@
                 padding: 0;
         }
         body{
-                background-color: #A0DCDC;
+                background-color: white;
                 font-size: 25px;
         }
         .Post{
@@ -60,6 +60,8 @@
         }
         h1{
                 font-family: Poppins;
+                color: #2B475E;
+                font-size: 100px;
         }
         #articulo{
                 font-size: 20px;
@@ -69,9 +71,28 @@
                 font-size: 15px;
 
         }
+        .buton{
+                font-family: Poppins;
+                font-size: 18px;
+                color:white;
+                background-color: #FFD43D;
+                height: 40px;
+                width: 180px;
+                position: absolute;top: 2.8%;right: 5%;
+                text-align: center;
+        }
+        p{
+                font-family: poppins;
+        }
 </style>
 </head>
 <body>
+        <header>
+                <img src=1.png height="90px" width="220px">
+                <button onclick="location.href='Index.html'" class="buton" type="button">Volver a Explorar</button>
+        </header>
+<h1>Sube tu idea</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil blanditiis perferendis quo temporibus, corporis maxime cupiditate accusantium esse nisi quasi at, sapiente aut aliquam laudantium. Ex sed praesentium odit rerum?</p>
 <form action='http://localhost:3000/upload_your_idea' method="POST" enctype="multipart/form-data" id="formulario">
         Nombre de la idea <input type="text" name="post_Name"><br>
         Descripción <input type="text" name="desciption"><br>
@@ -79,4 +100,6 @@
         <input type="submit" value="upload">
 </form>
 </body>
+<footer>Creado por RSD, derechos reservados 2021©	
+</footer>
 </html>
