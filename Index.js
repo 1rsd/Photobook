@@ -55,8 +55,10 @@ app.get('/', function(req, res, next){
   });
   app.post('/upload_your_idea', function(req, res, next){
     let EDFile = req.files.file
+    console.log(EDFile.name)
     EDFile.mv(`./post/${EDFile.Photobook}`,err => {
         if(err) return res.status(500).send({ message : err })
+        console.log(EDFile.Photobook)
         return res.status(200).send({ message : 'File upload' })
     res.end();
   })
