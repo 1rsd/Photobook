@@ -23,6 +23,7 @@
                 <li>CSS</li>
             </ul>
                 <h3>Con esto buscamos hacer de Photobook, un lugar donde las ideas se encuentran.</h3>
+                <p>Para ver la documentación en Swagger haga clic <a href=https://app.swaggerhub.com/apis/1rsd/Photobook/1.0.0>aquí</a></p>
         </font>
     </body>
 
